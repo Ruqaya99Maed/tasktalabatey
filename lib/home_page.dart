@@ -432,7 +432,7 @@ class _MyHomePageState extends State<MyHomePage> {
       label: 'الحساب',
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.list_alt_outlined),
+      icon: Icon(Icons.list_alt_outlined,color: Color.fromARGB(255, 128, 125, 125),),
       label: 'الطلبات',
     ),
     BottomNavigationBarItem(
@@ -445,10 +445,10 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
 
   ],
-  currentIndex: _selectedIndex,
+  currentIndex: 0,
 
   unselectedItemColor: Colors.grey.withOpacity(0.6),
-  onTap: _onItemTapped,
+  onTap: null,
 ),);
 
   }
