@@ -424,35 +424,34 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-    );
+     bottomNavigationBar: BottomNavigationBar(
+  items: const <BottomNavigationBarItem>[
+
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: 'الحساب',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.list_alt_outlined),
+      label: 'الطلبات',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.account_balance_wallet_outlined),
+      label: 'المحفظة',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home_filled),
+      label: 'الرئيسة',
+    ),
+
+  ],
+  currentIndex: _selectedIndex,
+
+  unselectedItemColor: Colors.grey.withOpacity(0.6),
+  onTap: _onItemTapped,
+),);
+
   }
 }
 
-//  bottomNavigationBar: BottomNavigationBar(
-//   items: const <BottomNavigationBarItem>[
 
-//     BottomNavigationBarItem(
-//       icon: Icon(Icons.person),
-//       label: 'الحساب',
-//     ),
-//     BottomNavigationBarItem(
-//       icon: Icon(Icons.list_alt_outlined),
-//       label: 'الطلبات',
-//     ),
-//     BottomNavigationBarItem(
-//       icon: Icon(Icons.account_balance_wallet_outlined),
-//       label: 'المحفظة',
-//     ),
-//     BottomNavigationBarItem(
-//       icon: Icon(Icons.home_filled),
-//       label: 'الرئيسة',
-//     ),
-
-//   ],
-//   currentIndex: _selectedIndex,
-
-//   unselectedItemColor: Colors.grey.withOpacity(0.6),
-//   onTap: _onItemTapped,
-// ),);
-
-// This trailing comma makes auto-formatting nicer for build methods.
